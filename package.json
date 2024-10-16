@@ -1,0 +1,33 @@
+{
+  "name": "code-collector",
+  "version": "1.0.0",
+  "description": "A CLI tool to collect local code files into a formatted output",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "code-collector": "dist/cli.js"
+  },
+  "files": [
+    "dist/bin/cli.d.ts",
+    "dist/bin/cli.js",
+    "dist/src/index.d.ts",
+    "dist/src/index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["code", "aggregation", "cli", "esbuild"],
+  "author": "Jakub Wójcik",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "esbuild": "^0.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.3"
+  }
+}
