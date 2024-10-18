@@ -1,5 +1,6 @@
 # Code Collector
-A handy command-line tool to collect local JavaScript and TypeScript code files into a formatted output. This tool recursively resolves all local imports from chosen source file (excluding node_modules dependencies) and collects each resolved file into a structured format, making it helpful identyfing root cause in chosen application area, preparing documentation or code snippets for LLMs.
+A handy command-line tool to collect local JavaScript and TypeScript code files into a formatted output. This tool recursively resolves all local imports from the chosen source file (excluding node_modules dependencies) and collects each resolved file into a structured format. 
+This helps to identify a bug's root cause in the chosen application area, review its business logic, and prepare documentation or code snippets for LLMs.
 
 ## Features
 
